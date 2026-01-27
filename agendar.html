@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende sua Consulta | FisioVip - Fisioterapia Premium no RJ</title>
+    <meta name="description"
+        content="Agende agora sua avaliação na FisioVip. Fisioterapia integrativa e esportiva com atendimento personalizado no Rio de Janeiro.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Agende sua Consulta | FisioVip">
+    <meta property="og:description" content="Transforme sua saúde com fisioterapia premium. Agende agora!">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="agendar.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="background-gradient"></div>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header fade-in">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Fisio<span class="logo-accent">Vip</span></span>
+            </a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <div class="badge">
+                <i data-lucide="sparkles"></i>
+                <span>Vagas Limitadas Esta Semana</span>
+            </div>
+            <h1 class="hero-title">
+                Agende sua <span class="gradient-text">primeira consulta</span> e transforme sua saúde
+            </h1>
+            <p class="hero-subtitle">
+                Preencha o formulário abaixo e receba atendimento personalizado via WhatsApp. Rápido, fácil e sem
+                burocracia.
+            </p>
+
+            <!-- Trust Indicators -->
+            <div class="trust-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">+500</span>
+                        <span class="stat-label">Pacientes</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfação</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Especialidades</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Form -->
+        <section class="form-section fade-in">
+            <form class="booking-form glass-card" id="booking-form">
+                <h2 class="form-title">
+                    <i data-lucide="clipboard-list"></i>
+                    Dados para Agendamento
+                </h2>
+
+                <!-- Service Selection -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <i data-lucide="activity"></i>
+                        Qual tratamento você precisa?
+                    </label>
+                    <div class="service-grid">
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Fisioterapia Integrativa" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="activity"></i>
+                                </div>
+                                <span class="service-name">Fisioterapia Integrativa</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Fisioterapia Esportiva" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="dumbbell"></i>
+                                </div>
+                                <span class="service-name">Fisioterapia Esportiva</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Osteopatia" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="hand"></i>
+                                </div>
+                                <span class="service-name">Osteopatia</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Quiropraxia" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="bone"></i>
+                                </div>
+                                <span class="service-name">Quiropraxia</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Recovery" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="zap"></i>
+                                </div>
+                                <span class="service-name">Recovery</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+
+                        <label class="service-card">
+                            <input type="radio" name="service" value="Educação em Dor" required>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i data-lucide="brain"></i>
+                                </div>
+                                <span class="service-name">Educação em Dor</span>
+                            </div>
+                            <div class="service-check">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="name" class="form-label">
+                        <i data-lucide="user"></i>
+                        Seu nome completo
+                    </label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Digite seu nome completo"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">
+                        <i data-lucide="phone"></i>
+                        WhatsApp para contato
+                    </label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(21) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time" class="form-label">
+                        <i data-lucide="clock"></i>
+                        Melhor horário para contato
+                    </label>
+                    <select id="time" name="time" class="form-select" required>
+                        <option value="">Selecione um horário</option>
+                        <option value="Manhã (8h - 12h)">Manhã (8h - 12h)</option>
+                        <option value="Tarde (12h - 18h)">Tarde (12h - 18h)</option>
+                        <option value="Noite (18h - 20h)">Noite (18h - 20h)</option>
+                        <option value="Qualquer horário">Qualquer horário</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">
+                    <i data-lucide="message-circle"></i>
+                    <span>Continuar no WhatsApp</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+
+                <!-- Privacy Note -->
+                <p class="privacy-note">
+                    <i data-lucide="shield-check"></i>
+                    Seus dados são 100% seguros e não serão compartilhados
+                </p>
+            </form>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="testimonials fade-in">
+            <h3 class="testimonials-title">O que nossos pacientes dizem</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Atendimento impecável! Em poucas sessões já senti grande melhora nas
+                        minhas dores."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <span class="author-name">Marina R.</span>
+                            <span class="author-role">Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Profissionais excepcionais que realmente se importam com o paciente.
+                        Recomendo!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RF</div>
+                        <div class="author-info">
+                            <span class="author-name">Rafael F.</span>
+                            <span class="author-role">Atleta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">© 2026 FisioVip - Fisioterapia Integrativa & Esportiva</p>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/fisiovip.rj/" target="_blank" rel="noopener">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5521976086122" target="_blank" rel="noopener">
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="agendar.js"></script>
+</body>
+
+</html>
