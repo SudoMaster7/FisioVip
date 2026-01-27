@@ -782,3 +782,274 @@ body {
 .fade-in:nth-child(4) {
     animation-delay: 0.4s;
 }
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
+@media (max-width: 767px) {
+
+    /* Container adjustments */
+    .container {
+        padding: 1rem;
+    }
+
+    /* Header optimizations */
+    .header {
+        padding: 1rem 0;
+    }
+
+    .logo-text {
+        font-size: 1.75rem;
+    }
+
+    /* Hero section */
+    .hero {
+        margin-bottom: 2rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .badge i {
+        width: 14px;
+        height: 14px;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Form section */
+    .form-section {
+        margin-bottom: 2rem;
+    }
+
+    .glass-card {
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+    }
+
+    .form-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-title i {
+        width: 24px;
+        height: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+        font-size: 0.75rem;
+        margin-bottom: 0.625rem;
+    }
+
+    /* Service grid - single column on mobile */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .service-content {
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+
+    .service-icon {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .service-icon i {
+        width: 20px;
+        height: 20px;
+    }
+
+    .service-name {
+        font-size: 0.875rem;
+        text-align: left;
+    }
+
+    /* Form inputs */
+    .form-input,
+    .form-select {
+        padding: 0.875rem;
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+    }
+
+    /* Submit button */
+    .btn-submit {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .btn-submit i {
+        width: 20px;
+        height: 20px;
+    }
+
+    .privacy-note {
+        font-size: 0.6875rem;
+        margin-top: 0.75rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        margin-bottom: 2rem;
+    }
+
+    .testimonials-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .testimonials-grid {
+        gap: 0.75rem;
+    }
+
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.8125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .author-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 0.75rem;
+    }
+
+    .author-name {
+        font-size: 0.8125rem;
+    }
+
+    .author-role {
+        font-size: 0.6875rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-text {
+        font-size: 0.8125rem;
+    }
+
+    .footer-links a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-links a i {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Reduce animation intensity on mobile */
+    .shape {
+        opacity: 0.08;
+    }
+
+    /* Optimize background shapes for mobile */
+    .shape-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .shape-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .shape-3 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 374px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9375rem;
+    }
+
+    .glass-card {
+        padding: 1.25rem;
+    }
+
+    .form-title {
+        font-size: 1.125rem;
+    }
+
+    .service-card {
+        padding: 0.875rem;
+    }
+
+    .service-name {
+        font-size: 0.8125rem;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonials {
+        margin-bottom: 1.5rem;
+    }
+
+    .glass-card {
+        padding: 1.25rem;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+}
