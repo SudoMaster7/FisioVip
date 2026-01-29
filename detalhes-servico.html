@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Serviço - FisioVip</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .service-hero {
+            padding: 120px 0 60px;
+            background: var(--gradient-hero);
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .service-title {
+            color: var(--white);
+        }
+
+        .service-detail {
+            padding: var(--spacing-3xl) 0;
+            background: var(--white);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: start;
+        }
+
+        .detail-image {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .detail-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .detail-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .detail-description {
+            font-size: var(--font-size-lg);
+            line-height: 1.8;
+            color: var(--gray-600);
+            white-space: pre-line;
+            /* Preserves line breaks */
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--white);
+            font-weight: 500;
+            margin-bottom: var(--spacing-lg);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition-base);
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+
+            .service-hero {
+                padding: 100px 0 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (Same as index) -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="visual novo/logo-name.jpeg" alt="FisioVip - Fisioterapia Integrativa & Esportiva"
+                    class="logo-img">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="index.html#planos" class="nav-link">Planos</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5521976086122" target="_blank" rel="noopener" class="btn btn-primary header-cta">
+                <i data-lucide="message-circle"></i>
+                <span class="desktop-only">Agendar Consulta</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="service-hero">
+            <div class="container">
+                <a href="index.html#servicos" class="back-link">
+                    <i data-lucide="arrow-left"></i> Voltar para Serviços
+                </a>
+                <h1 style="color: var(--white);" class="section-title " id="service-title">Carregando...</h1>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="service-detail">
+            <div class="container">
+                <div class="detail-grid">
+                    <div class="detail-image" id="image-container">
+                        <!-- Image will be injected here -->
+                    </div>
+
+                    <div class="detail-content">
+                        <div id="service-description" class="detail-description">
+                            <p>Carregando informações...</p>
+                        </div>
+
+                        <a href="#" id="whatsapp-btn" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                            <i data-lucide="message-circle"></i>
+                            Agendar Avaliação
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 FisioVip. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/fisiovip.rj" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="servicos-data.js"></script>
+    <script>
+        // Icons
+        lucide.createIcons();
+
+        // Mobile Menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('nav');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                mobileBtn.classList.toggle('active');
+            });
+        }
+
+        // Load Service Data
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceId = urlParams.get('id');
+
+            if (serviceId && servicesData[serviceId]) {
+                const service = servicesData[serviceId];
+
+                // Update Title
+                document.title = `${service.title} - FisioVip`;
+                document.getElementById('service-title').textContent = service.title;
+
+                // Update Image
+                const imgContainer = document.getElementById('image-container');
+                imgContainer.innerHTML = `<img src="${service.image}" alt="${service.title}">`;
+
+                // Update Description
+                document.getElementById('service-description').textContent = service.description;
+
+                // Update Button
+                const btn = document.getElementById('whatsapp-btn');
+                btn.href = `https://wa.me/5521976086122?text=${encodeURIComponent(service.whatsappMessage)}`;
+            } else {
+                // Handle not found
+                document.getElementById('main-content').innerHTML = `
+                    <div class="container" style="text-align: center; padding: 100px 0;">
+                        <h2>Serviço não encontrado</h2>
+                        <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">Voltar para Início</a>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>
